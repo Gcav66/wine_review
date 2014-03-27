@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Wine.create(name:"Boone's Farm" , year:"2014" , winery:"Boone's", country:"USA" , varietal:"Classy" )
-Wine.create(name:"Rose" , year:"2010" , winery:"Rick Ross's", country:"USA" , varietal:"Sweet" )
-Wine.create(name:"White Zinfadel" , year:"2014" , winery:"Franzia", country:"USA" , varietal:"Boxy" )
-Wine.create(name:"Moscato" , year:"2004" , winery:"Costco", country:"USA" , varietal:"Desert Wine" )
+Wine.create(name:'Boones Farm', year:'2014' , winery:'Boones', country:'USA' , varietal:'Classy' )
+Wine.create(name:'Rose' , year:'2010' , winery:'Rick Ross', country:'USA' , varietal:'Sweet' )
+Wine.create(name:'White Zinfadel' , year:'2014' , winery:'Franzia', country:'USA' , varietal:'Boxy' )
+Wine.create(name:'Moscato' , year:'2004' , winery:'Costco', country:'USA' , varietal:'Desert Wine' )
