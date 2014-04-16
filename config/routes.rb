@@ -1,8 +1,8 @@
 WineReview::Application.routes.draw do
+  root 'wines#index'
   resources :wines do
       get 'page/:page', :action => :index, :on => :collection
   end
-  root 'wines#index'
   #get "/wines" => "wines#index", as: 'wines'
   #get "/wines/:id" => "wines#show", as: 'wine'
   # The priority is based upon order of creation: first created -> highest priority.

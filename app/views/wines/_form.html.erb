@@ -5,6 +5,7 @@
   <%= f.label :winery %> <%= f.text_field :winery %><br />
   <%= f.label :country %> <%= f.text_field :country %><br />
   <%= f.label :varietal %> <%= f.text_field :varietal %><br />
+  <%= f.label :varietal %> <%= f.select :varietal, Wine::VARIETAL, { prompt: "Pick one" } %><br />
   <p>
     <%= f.submit %>
     <%= link_to 'Cancel', wines_path %>

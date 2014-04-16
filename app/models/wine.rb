@@ -1,9 +1,10 @@
 class Wine < ActiveRecord::Base
-valid_varietal = ["Merlot", "Chardonnay", "Moscato", "Classy", "Rose", "Chianti"]
+ VARIETAL= ["Merlot", "Chardonnay", "Moscato", "Classy", "Rose", "Chianti"]
 validates :name, :year, :winery, :country, :varietal, presence: true
 validates :year,
    numericality: { only_integer: true, greater_than_or_equal_to: 0 },
    unless: "year.blank?"
+validates :varietal, inclusion: { in: VARIETAL, message: "must be valid" }
 =begin
 validates :varietal,
    :inclusion => { in: => valid_varietal]},
