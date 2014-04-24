@@ -2,24 +2,16 @@
 
 one:
   name: MyString
-  string: MyString
-  rating: MyString
-  integer: MyString
+  rating: 1
   location: MyString
-  string: MyString
-  comments: MyString
-  string: MyString
-  tasted_on: MyString
-  datetime: MyString
+  comment: MyString
+  tasted_on: 2014-04-23 22:45:50
+  wine_id: 
 
 two:
   name: MyString
-  string: MyString
-  rating: MyString
-  integer: MyString
+  rating: 1
   location: MyString
-  string: MyString
-  comments: MyString
-  string: MyString
-  tasted_on: MyString
-  datetime: MyString
+  comment: MyString
+  tasted_on: 2014-04-23 22:45:50
+  wine_id: 

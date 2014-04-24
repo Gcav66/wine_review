@@ -11,20 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140422224357) do
+ActiveRecord::Schema.define(version: 20140424024550) do
 
   create_table "log_entries", force: true do |t|
     t.string   "name"
-    t.string   "string"
-    t.string   "rating"
-    t.string   "integer"
+    t.integer  "rating"
     t.string   "location"
-    t.string   "comments"
-    t.string   "tasted_on"
-    t.string   "datetime"
+    t.string   "comment"
+    t.datetime "tasted_on"
+    t.integer  "wine_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "log_entries", ["wine_id"], name: "index_log_entries_on_wine_id"
 
   create_table "wines", force: true do |t|
     t.string   "name"
