@@ -7,6 +7,7 @@
   <p><label>Winery:</label> <%= @wine.winery%></p>
   <p><label>Country:</label> <%= @wine.country %></p>
   <p><label>Varietal:</label> <%= @wine.varietal%></p>
+  <p><label>Average Review:</label> <%= format_average_rating(@wine) %></p>
 </article>
 
 <%= link_to 'All Wines', wines_path %>
